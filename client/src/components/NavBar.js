@@ -10,7 +10,16 @@ class NavBar extends Component {
 
     if (user.id) {
       return (
-        <Menu.Menu position='right'>
+          <Menu.Menu position='right'>
+          <Link to='/listings'>
+            <Menu.Item name='Listings' />
+          </Link>
+          <Link to='/about'>
+            <Menu.Item name='About Us' />
+          </Link>
+          <Link to='/contact'>
+            <Menu.Item name='Contact' />
+          </Link>
           <Menu.Item
             name='Logout'
             onClick={() => dispatch(handleLogout(history))}
@@ -20,6 +29,15 @@ class NavBar extends Component {
     }
     return (
       <Menu.Menu position='right'>
+        <Link to='/listings'>
+          <Menu.Item name='Listings' />
+        </Link>
+        <Link to='/about'>
+          <Menu.Item name='About Us' />
+        </Link>
+        <Link to='/contact'>
+          <Menu.Item name='Contact' />
+        </Link>
         <Link to='/register'>
           <Menu.Item name='Register' />
         </Link>
@@ -35,7 +53,7 @@ class NavBar extends Component {
       <div>
         <Menu pointing secondary>
           <Link to='/'>
-            <Menu.Item name='home' />
+            <Menu.Item name='FAKE ESTATE' />
           </Link>
           { this.rightNavs() }
         </Menu>

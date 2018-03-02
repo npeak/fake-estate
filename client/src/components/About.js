@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Header } from 'semantic-ui-react';
 
-class Home extends Component {
+class About extends Component {
   render() {
     return (
       <Header as='h1' textAlign='center'>
-        Home Component
+        About Us Component
       </Header>
     );
   }
 }
 
-export default Home;
+export default About;
